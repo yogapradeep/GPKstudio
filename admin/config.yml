@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+local_backend:
+  name: file-system
+  url: http://localhost:8080/
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+media_folder: "assets/img" # Media files will be stored in the repo under images/uploads
+
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+       - file: "src/index.html"
+         label: "works"
+         name: "works"
+         fields:
+          - {label: "images", name: images, widget: list, fields: [
+            {label: "Image", name: "image", widget: "image"},]}
+          - {label: "events", name: events, widget: list, fields: [
+            {label: "date", name: "date", widget: "text"},
+             {label: Location, name: location, widget: string},
+            {label: Title, name: title, widget: string},
+            {label: "Image", name: "image1", widget: "image",required: false},]}
+
+
+
