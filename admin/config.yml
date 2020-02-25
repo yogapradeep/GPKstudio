@@ -19,6 +19,7 @@ collections:
          label: "works"
          name: "works"
          fields:
+          - {label: Title, name: layout, widget: hidden, default: "index.njk"}
           - {label: "images", name: images, widget: list, fields: [
             {label: "Image", name: "image", widget: "image"},]}
           - {label: "events", name: events, widget: list, fields: [
