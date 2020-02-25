@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-_site
+site
 prepros-6.config
