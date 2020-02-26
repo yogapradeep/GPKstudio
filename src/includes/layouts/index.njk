@@ -61,7 +61,7 @@
             <h1 class="m-0 site-logo"><a href="index.html">GPK</a></h1>
           </div>
 
-          <div class="text-left">
+          <div class="text-right">
 
             <nav class="site-navigation position-relative" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -289,7 +289,8 @@
 
     </section>
     <section>
-      <div class="grid mas-width  item ">
+     <div class="container">
+      <div class="grid   item ">
         <div class="grid-sizer "></div>
         <div class="gutter-sizer "></div>
         {% for img in images %}
@@ -300,6 +301,7 @@
          {% endfor %} 
        
       </div>
+       </div>
     </section>
 
 
@@ -355,9 +357,9 @@
          
               <img src="{{event.image1}}" alt="Image" class="img-fluid">
               <div class="p-4 bg-white">
-                <span class="date">{{event.date}}</span>
-               <h3> {{event.location}}</h3>
-                <h3> {{event.title}}</h3>
+                <h3 class="date">{{event.date}}</h3>
+               <h4> {{event.location}}</h4>
+                <h4> {{event.title}}</h4>
             
 
               </div>

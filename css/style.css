@@ -1057,17 +1057,14 @@ figure figcaption {
 @media (min-width: 1024px) { /* ... */ 
   .grid-sizer,
   .grid-item {
-    width: 22%;
+    width: 31%;
   } 
   .dsk_image{
     display: unset;
   }
-  .mas-width{
-    width:80% ;
-      margin: auto;
-  }
+ 
   .gutter-sizer{
-    width:4%;
+    width:3.5%;
   }
   .grid-item {
     float: left;
@@ -1079,5 +1076,5 @@ figure figcaption {
 .grid-item img {
   display: block;
   max-width: 100%;
-  border-radius: 10px;
+
 }
