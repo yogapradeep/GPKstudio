@@ -21,7 +21,7 @@ const works = createClass({
           </div>
         
      
-        ${entry.getIn(["data", "events"], []).map(evt => html`
+        <!-- ${entry.getIn(["data", "events"], []).map(evt => html`
            <div class="col-md-6 mb-5 mb-lg-0 col-lg-4 ">
       
             <div class="blog_entry">
@@ -36,7 +36,7 @@ const works = createClass({
               </div>
               </div>
           </div>
-        `)} 
+        `)}  -->
 
         </div>
       </div>
