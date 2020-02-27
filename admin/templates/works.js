@@ -5,14 +5,11 @@ const html = htm.bind(h);
 // Preview component for a Page
 const works = createClass({
 
-    render() {
-        const entry = this.props.entry;
-        const getAsset = this.props.getAsset;
+  render() {
+    const entry = this.props.entry;
+    const getAsset = this.props.getAsset;
 
-        return html`
-        
-        
-    <section class="site-section bg-light" id="blog-section">
+    return html`<section class="site-section bg-light" id="blog-section">
       <div class="container">
         <div class="row">
 
@@ -40,11 +37,11 @@ const works = createClass({
 
         </div>
       </div>
-
+      <h3 class="test">test</h3>
     </section>
-    <h3 class="test">test</h3>  
+     
       
      `;
-    }
+  }
 });
 export default works;
