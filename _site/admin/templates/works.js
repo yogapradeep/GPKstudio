@@ -19,7 +19,7 @@ const works = createClass({
           <div class="col-12 mb-5 ">
             <h2 class="section-title text-center mb-5 test">Upcoming Events</h2>
           </div>
-        
+       
      
         <!-- ${entry.getIn(["data", "events"], []).map(evt => html`
            <div class="col-md-6 mb-5 mb-lg-0 col-lg-4 ">
@@ -42,7 +42,7 @@ const works = createClass({
       </div>
 
     </section>
-        
+    <h3 class="test">test</h3>  
       
      `;
     }
