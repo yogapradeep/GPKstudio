@@ -6,6 +6,13 @@ const html = htm.bind(h);
 const works = createClass({
 
   render() {
+    const mystyle = {
+      color: "green",
+      backgroundColor: "DodgerBlue",
+      padding: "10px",
+      fontFamily: "Arial"
+    };
+
     const entry = this.props.entry;
     const getAsset = this.props.getAsset;
 
@@ -14,7 +21,7 @@ const works = createClass({
         <div class="row">
 
           <div class="col-12 mb-5 ">
-            <h2 style="text-align:center;color:green;" class="section-title text-center mb-5 test">Upcoming Events</h2>
+            <h2 style= ${mystyle} class="section-title text-center mb-5 test">Upcoming Events</h2>
           </div>
        
      
