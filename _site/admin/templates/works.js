@@ -11,6 +11,39 @@ const works = createClass({
 
         return html`
         
+        
+    <section class="site-section bg-light" id="blog-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Upcoming Events</h2>
+          </div>
+        </div>
+     
+        ${entry.getIn(["data", "events"], []).map(evt => html`
+           <div class="col-md-6 mb-5 mb-lg-0 col-lg-4 ">
+          <div class="   ">
+            <div class="blog_entry">
+         
+              <img src="${evt.get("image1")}" alt="Image" class="img-fluid">
+              <div class="p-4 bg-white">
+                <h3 class="date">${evt.get("date")}</h3>
+               <h4> ${evt.get("location")}</h4>
+                <h4> ${evt.get("title")}</h4>
+            
+
+              </div>
+              </div>
+          </div>
+          `)} 
+
+        </div>
+      </div>
+
+    </section>
+        
+      
      `;
     }
 });
