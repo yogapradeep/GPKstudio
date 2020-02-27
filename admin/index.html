@@ -21,7 +21,17 @@
     {# CMS.registerPreviewStyle("/assets/css/icons.css"); #}
 </script>
  <script type="module" src="/admin/templates/index.js"></script>
-
+ <script>
+  if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
  
   </body>
 </html>
