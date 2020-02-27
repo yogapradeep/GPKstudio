@@ -44,7 +44,7 @@ const works = createClass({
 
         </div>
       </div>
-      <h3 class="test">test</h3>
+      <h3 className="test">test</h3>
     </section>
      
       
