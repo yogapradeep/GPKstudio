@@ -16,8 +16,8 @@ const works = createClass({
       <div class="container">
         <div class="row">
 
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Upcoming Events</h2>
+          <div class="col-12 mb-5 ">
+            <h2 class="section-title text-center mb-5 test">Upcoming Events</h2>
           </div>
         
      

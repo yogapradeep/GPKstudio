@@ -1079,3 +1079,7 @@ figure figcaption {
   max-width: 100%;
 
 }
+.test{
+  text-align: center;
+  color: red;
+}
