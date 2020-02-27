@@ -1,5 +1,6 @@
 node_modules
 package-lock.json
-_site
+
 prepros-6.config
 site/admin/templates/works.
+_site
