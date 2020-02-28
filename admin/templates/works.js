@@ -33,8 +33,8 @@ const works = createClass({
               <!-- <img src="${this.props.getAsset(evt.getIn(['data', 'image1']))}" alt="Image" class="img-fluid"> -->
               <div class="p-4 bg-white">
                 <h3 class="date">${evt.getIn(['data', 'date'])}</h3>
-               <h4> ${evt.getIn(['data', 'location'])}</h4>
-                <h4> ${evt.getIn(['data', 'title'])}</h4>
+               <h5> ${evt.getIn(['data', 'location'])}</h5>
+                <h5> ${evt.getIn(['data', 'title'])}</h5>
             
 
               </div>

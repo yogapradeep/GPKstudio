@@ -150,7 +150,7 @@ jQuery(document).ready(function ($) {
 				margin: 0,
 				autoplay: true,
 				nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
+				navText: ['<span class="icon-arrow_back a_back position-absolute">', '<span class="icon-arrow_forward a_next position-absolute">'],
 				responsive: {
 					600: {
 						margin: 0,

@@ -406,7 +406,7 @@
             <h2 class="section-title text-center mb-5">Upcoming Events</h2>
           </div>
         </div>
-        <div class="owl-carousel nonloop-block-13">
+        <div class="owl-carousel nonloop-block-13 position-relative">
            {% for event in events  %}
           <div class=" mb-5 mb-lg-0 m-2  slide ">
             <div class="blog_entry">
@@ -414,8 +414,8 @@
               <img src="{{event.image1}}" alt="Image" class="img-fluid">
               <div class="p-4 bg-white">
                 <h3 class="date">{{event.date}}</h3>
-               <h4> {{event.location}}</h4>
-                <h4> {{event.title}}</h4>
+               <h5> {{event.location}}</h5>
+                <h5> {{event.title}}</h5>
             
 
               </div>
