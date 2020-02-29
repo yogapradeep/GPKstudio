@@ -30,7 +30,7 @@ const works = createClass({
            <div class="col-md-6 mb-5 mb-lg-0 col-lg-4  " key=${i}>
       
             <div class="blog_entry">
-            <img src=${evt.get("image")} alt="Image" />
+            <img src=${getAsset(evt.get("image"))} alt="Image" />
               <div class="p-4 bg-white">
               
 
