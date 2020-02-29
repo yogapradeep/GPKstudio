@@ -25,13 +25,13 @@ const works = createClass({
           </div>
        
      
-        ${entry.getIn(["data", "events"], []).map(evt => html`
-           <div class="col-md-6 mb-5 mb-lg-0 col-lg-4 ">
+        ${entry.getIn(["data", "events"], []).map((evt, i) => html`
+           <div class="col-md-6 mb-5 mb-lg-0 col-lg-4  " key=${i}>
       
             <div class="blog_entry">
          
               <div class="p-4 bg-white">
-              <img src="${getAsset(evt.get("image1")).toString()}" alt="Image" class="img-fluid">
+              <img src="${getAsset(evt.get("image1"))}" alt="Image" >
                 <h3 class="date">${evt.get("date")}</h3>
                <h5> ${evt.get("location")}</h5>
                 <h5> ${evt.get("title")}</h5>
