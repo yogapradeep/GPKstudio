@@ -30,7 +30,7 @@ const works = createClass({
            <div class="col-md-6 mb-5 mb-lg-0 col-lg-4  " key=${i}>
       
             <div class="blog_entry">
-         
+            <img src=${getAsset(evt.getIn(["data", "t-image"]))} alt="Image" />
               <div class="p-4 bg-white">
               
 
@@ -50,7 +50,7 @@ const works = createClass({
       
     </section>
     <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
-    <img src=${timg} alt="Image" />
+    
      
       
      `;
