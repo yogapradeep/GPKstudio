@@ -15,7 +15,7 @@ const works = createClass({
 
     const entry = this.props.entry;
     const getAsset = this.props.getAsset;
-    let timg = getAsset(entry.getIn(["data", "t-image"]))
+    let timg = getAsset(entry.get("t-image"));
 
     return html`<section class="site-section bg-light" id="blog-section">
       <div class="container">
@@ -50,7 +50,7 @@ const works = createClass({
       
     </section>
     <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
-    <img src=${getAsset(entry.get("t-image"))} alt="Image" >
+    <img src=${timg} alt="Image" >
      
       
      `;
