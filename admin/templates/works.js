@@ -15,7 +15,7 @@ const works = createClass({
 
     const entry = this.props.entry;
     const getAsset = this.props.getAsset;
-    let timg = getAsset(entry.get("t-image"));
+    let timg = getAsset(entry.getIn(["data", "t-image"]));
 
     return html`<section class="site-section bg-light" id="blog-section">
       <div class="container">
