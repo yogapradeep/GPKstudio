@@ -31,7 +31,8 @@ const works = createClass({
             <div class="blog_entry">
          
               <div class="p-4 bg-white">
-              <img src="${evt.getAsset("image1")}" alt="Image" >
+              
+
                 <h3 class="date">${evt.get("date")}</h3>
                <h5> ${evt.get("location")}</h5>
                 <h5> ${evt.get("title")}</h5>
@@ -45,6 +46,7 @@ const works = createClass({
         </div>
       </div>
       <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
+      <img src="${entry.get("t-image")}" alt="Image" >
     </section>
      
       
