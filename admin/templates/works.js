@@ -30,7 +30,7 @@ const works = createClass({
       
             <div class="blog_entry">
          
-              <img src="${getAsset(evt.get("image1"))}" alt="Image" class="img-fluid">
+              <!-- <img src="${getAsset(evt.get("image1"))}" alt="Image" class="img-fluid"> -->
               <div class="p-4 bg-white">
                 <h3 class="date">${evt.get("date")}</h3>
                <h5> ${evt.get("location")}</h5>
