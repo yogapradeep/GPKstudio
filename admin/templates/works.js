@@ -25,16 +25,16 @@ const works = createClass({
           </div>
        
      
-        ${this.props.widgetsFor("events").map(evt => html`
+        ${entry.getIn(["data", "events"], []).map(evt => html`
            <div class="col-md-6 mb-5 mb-lg-0 col-lg-4 ">
       
             <div class="blog_entry">
          
-              <img src="${getAsset(evt.getIn(['data', 'image1']))}" alt="Image" class="img-fluid">
+              <img src="${getAsset(evt.get("image1"))}" alt="Image" class="img-fluid">
               <div class="p-4 bg-white">
-                <h3 class="date">${evt.getIn(['data', 'date'])}</h3>
-               <h5> ${evt.getIn(['data', 'location'])}</h5>
-                <h5> ${evt.getIn(['data', 'title'])}</h5>
+                <h3 class="date">${evt.get("date")}</h3>
+               <h5> ${evt.get("location")}</h5>
+                <h5> ${evt.get("title")}</h5>
             
 
               </div>
