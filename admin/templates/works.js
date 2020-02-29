@@ -46,7 +46,7 @@ const works = createClass({
         </div>
       </div>
       <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
-      <img src="${getAsset(entry.getIn(["data", "t-image"]))}" alt="Image" >
+      <img src=${getAsset(entry.getIn(["data", "t-image"]))} alt="Image" >
     </section>
      
       
