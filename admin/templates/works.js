@@ -50,7 +50,7 @@ const works = createClass({
       
     </section>
     <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
-   
+    <img src=${getAsset(entry.get("t-image"))} alt="Image" >
      
       
      `;
