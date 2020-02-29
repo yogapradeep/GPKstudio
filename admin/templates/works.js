@@ -31,7 +31,7 @@ const works = createClass({
             <div class="blog_entry">
          
               <div class="p-4 bg-white">
-              <img src="${evt.get("image1")}" alt="Image" class="img-fluid">
+              <img src="${getAsset(evt.get("image1")).toString()}" alt="Image" class="img-fluid">
                 <h3 class="date">${evt.get("date")}</h3>
                <h5> ${evt.get("location")}</h5>
                 <h5> ${evt.get("title")}</h5>
