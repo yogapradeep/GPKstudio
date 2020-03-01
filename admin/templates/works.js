@@ -27,7 +27,7 @@ const works = createClass({
        
      
         ${entry.getIn(["data", "events"], []).map((evt, i) => html`
-           <div class="col-md-6  col-lg-4 mb-4 m-2 " >
+           <div class="col-md-6  col-lg-4 mb-4  " >
             <div class="blog_entry">
             <img  src=${getAsset(evt.get("image1"))} alt="Image" style= ${eimg} />
               <div class="p-4 bg-white">
