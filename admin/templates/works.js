@@ -7,10 +7,8 @@ const works = createClass({
 
   render() {
     const eimg = {
-
       width: 300,
       height: 250,
-
     };
 
     const entry = this.props.entry;
