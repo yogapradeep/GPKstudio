@@ -27,8 +27,7 @@ collections:
              {label: Location, name: location, widget: string},
             {label: Title, name: title, widget: string},
             {label: "Image", name: "image1", widget: image,required: false},]}
-          - { label: "t-text", name: "test", widget: "string" }
-          - { label: "t-image", name: "t-image", widget: "image" }
+          
 
 
 
