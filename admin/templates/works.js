@@ -10,12 +10,32 @@ const works = createClass({
       width: 300,
       height: 250,
     };
+    const pimg = {
+
+      height: 350,
+    };
 
     const entry = this.props.entry;
     const getAsset = this.props.getAsset;
     let timg = getAsset(entry.getIn(["data", "t-image"]));
 
-    return html`<section class="site-section bg-light" id="blog-section">
+    return html`
+    <section class="site-section block__62272" id="portfolio-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 position-relative">
+            <h2 class="section-title text-center mb-5">Our Photography</h2>
+          </div>   
+      ${entry.getIn(["data", "images"], []).map((img, i) => html`
+          <div class="col-md-6 col-lg-4 item mb-4">  
+            <span class="icon-search2"></span>
+              <img class="img-fluid" src="${getAsset(img.get("image"))}" style="${pimg}"  />
+         </div>
+         `)}
+        </div>
+      </div>
+    </section>
+    <section class="site-section bg-light" id="blog-section">
       <div class="container">
         <div class="row mb-5">
 
@@ -41,21 +61,7 @@ const works = createClass({
     </section>
  
 
-    <section class="site-section block__62272" id="portfolio-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">My Photography</h2>
-          </div>   
-      ${entry.getIn(["data", "images"], []).map((img, i) => html`
-          <div class="col-md-6 col-lg-4 item mb-4">  
-            <span class="icon-search2"></span>
-              <img class="img-fluid" src="${getAsset(img.get("image"))}"  />
-         </div>
-         `)}
-        </div>
-      </div>
-    </section>
+    
       
      `;
   }
