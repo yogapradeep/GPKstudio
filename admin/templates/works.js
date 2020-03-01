@@ -50,8 +50,30 @@ const works = createClass({
       
     </section>
     <h3 className="test">${entry.getIn(["data", "test"], null)}</h3>
-    
-     
+
+    <section class="site-section block__62272" id="portfolio-section">
+
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 position-relative">
+            <h2 class="section-title text-center mb-5">My Photography</h2>
+          </div>
+        </div>
+
+
+        <div class="row">
+      ${entry.getIn(["data", "images"], []).map((img, i) => html`
+          <div class="col-md-6 col-lg-4 item mb-4">
+            <a href="" class="item-wrap fancybox mb-4" >
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="${getAsset(img.get("image1"))}"  />
+            </a>
+         </div>
+         `)}
+        </div>
+      </div>
+    </section>
       
      `;
   }
