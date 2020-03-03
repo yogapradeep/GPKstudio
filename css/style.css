@@ -546,8 +546,8 @@ body:after {
     color: #fff; }
     .sticky-wrapper .site-navbar .site-menu-toggle .icon-menu {
       color: #fff; }
-  .sticky-wrapper .site-navbar .site-logo a {
-    color: #fff; }
+  /* .sticky-wrapper .site-navbar .site-logo a {
+    color: #fff; } */
   .sticky-wrapper .site-navbar .site-menu > li > a {
     color: rgba(255, 255, 255, 0.7) !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
@@ -826,22 +826,22 @@ body:after {
     .slide-one-item .owl-dots .owl-dot.active > span {
       background: #fff; }
 
-.blog_entry img {
+.event_entry img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
 
-.blog_entry > div {
+.event_entry > div {
   border: 1px solid #eee;
   border-top: none; }
 
-.blog_entry h3 {
+.event_entry h3 {
   font-size: 1.3rem; }
-  .blog_entry h3 a {
+  .event_entry h3 a {
     color: #000; }
-    .blog_entry h3 a:hover {
+    .event_entry h3 a:hover {
       color: #fab95b; }
 
-.blog_entry .date {
+.event_entry .date {
  
   display: block;
  
@@ -1008,10 +1008,6 @@ figure figcaption {
 
 
 
-.grid-item {
-  float: left;
-  margin-bottom: 8px;
-}
 
 
 @media (min-width:320px) and (max-width: 640px) {
@@ -1032,6 +1028,11 @@ figure figcaption {
     .gutter-sizer{
       width:2%;
     }
+    
+.grid-item {
+  float: left;
+  margin-bottom: 8px;
+}
 }
 @media (min-width: 641px) and (max-width: 1023px){ /* ... */
   
@@ -1092,6 +1093,14 @@ left:-50px
   right:-50px;
 
 }
+@media (min-width:320px) and (max-width: 640px) {
+  
 .ham-menu{
-  right:-40%;
+  left:20%;
+}
+}
+@media (min-width: 641px) and (max-width: 1023px){
+.ham-menu{
+  left:30%;
+}
 }

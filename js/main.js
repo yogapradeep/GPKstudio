@@ -149,8 +149,7 @@ jQuery(document).ready(function ($) {
 				stagePadding: 0,
 				margin: 0,
 				autoplay: true,
-				nav: true,
-				navText: ['<span class="icon-arrow_back a_back position-absolute">', '<span class="icon-arrow_forward a_next position-absolute">'],
+
 				responsive: {
 					600: {
 						margin: 0,
