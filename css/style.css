@@ -1103,4 +1103,14 @@ left:-50px
 .ham-menu{
   left:30%;
 }
+
+.a_back{
+  top:150px;
+  left:-30px
+  }
+  .a_next{
+    top:150px;
+    right:-30px;
+  
+  }
 }
