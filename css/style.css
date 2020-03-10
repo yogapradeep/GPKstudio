@@ -73,9 +73,8 @@ body:after {
     border-color: #e8590c;
     color: #fff; }
     .btn.btn-primary:hover {
-      background: #000;
-      border-color: #000;
-      color: #fff; }
+    
+      color: black; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
       color: #fff; }
@@ -877,7 +876,7 @@ body:after {
   
 }
 .ab-text{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .progress {
@@ -1161,9 +1160,7 @@ footer{
 .about-section{
   background-color:#ff922b ;
 }
-.ab-text{
-  color: black;
-}
+
 .text-intro h1{
   font-size: 2rem;
 }

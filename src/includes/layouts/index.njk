@@ -26,7 +26,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="overflow-x: hidden; overflow-y: hidden;">
 
 
 
@@ -111,10 +111,10 @@
       <div class="container">
         <div class="row ">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title  s-title text-center mb-5">Services</h2>
+            <h2 class="section-title  s-title text-center mb-5" data-aos="fade-up"  >Services</h2>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-down-right" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-glass"></span></div>
               <div class="service-about">
@@ -125,7 +125,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-down-left" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-video-camera"></span></div>
               <div class="service-about">
@@ -136,7 +136,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up-right" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-fire"></span></div>
               <div class="service-about">
@@ -147,7 +147,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up-left" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-magnet"></span></div>
               <div class="service-about">
@@ -158,7 +158,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up-right" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-video-camera"></span></div>
               <div class="service-about">
@@ -169,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4" data-aos="fade-up-left" data-aos-duration="1300" data-aos-delay="300">
             <div class="service d-flex h-100">
               <div class="service-number mr-4"><span class="icon-fire"></span></div>
               <div class="service-about">
@@ -191,14 +191,14 @@
       <div class="container ">
         <div class="row ">
           <div class="col-12 mb-4 position-relative">
-            <h2 class="section-title">About Us</h2>
+            <h2 class="section-title" data-aos="fade-right">About Us</h2>
           </div>
-          <div class="col-lg-6 order-2 order-lg-1">
-            <img class="img-fluid mb-4" src="images/credo_img_1.jpg" alt="Image">
-            <p class="text-black ab-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae cupiditate, aspernatur ipsa
+          <div class="col-lg-6 order-2 order-lg-1 mb-4">
+            <img class="img-fluid mb-4" src="images/credo_img_1.jpg" alt="Image" data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="300"data-aos-offset="0">
+            <p class="text-black ab-text" data-aos="fade-left" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae cupiditate, aspernatur ipsa
               enim magnam quaerat pariatur vero provident necessitatibus amet saepe officiis labore. Provident deserunt
               necessitatibus expedita. Voluptate, soluta?</p>
-            <p class="text-black ab-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo praesentium quibusdam minus
+            <p class="text-black ab-text" data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo praesentium quibusdam minus
               voluptatem sequi iure amet?</p>
           </div>
           <div class="col-lg-6 order-3 pl-lg-5 order-lg-2 event-count">
@@ -253,14 +253,14 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 ">
-            <h2 class="section-title text-center mb-5 title-white">Our Photography</h2>
+            <h2 class="section-title text-center mb-5 title-white" data-aos="fade-up">Our Photography</h2>
           </div>
         </div>
-      <div class="grid   item ">
+      <div class="grid   item  " >
         <div class="grid-sizer "></div>
         <div class="gutter-sizer "></div>
         {% for img in images %}
-        <a href="{{img.image}}" class="item-wrap fancybox  grid-item">
+        <a href="{{img.image}}" class="item-wrap fancybox  grid-item" data-aos="fade-up">
           <span class="icon-search2"></span>
           <img class="img-fluid" src="{{img.image}}">
         </a>
@@ -271,32 +271,32 @@
     </section>
 
 
-    <section class="site-section tst-con-bg">
-      <div class="container">
+    <section class="site-section tst-con-bg"  >
+      <div class="container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5 text-white">What Client Are Sayings</h2>
+            <h2 class="section-title text-center mb-5 text-white"  >What Client Are Sayings</h2>
           </div>
         </div>
-        <div class="owl-carousel slide-one-item">
-          <div class="slide">
+        <div class="owl-carousel slide-one-item"  >
+          <div class="slide" >
             <blockquote>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sunt nobis modi, ducimus magnam sint?
+              <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sunt nobis modi, ducimus magnam sint?
                 Soluta delectus mollitia, incidunt reprehenderit rerum tempore optio excepturi aut, error voluptatem
                 laborum quae eum.</p>
               <p><cite>&mdash; Graig Smith</cite></p>
             </blockquote>
           </div>
-          <div class="slide">
+          <div class="slide" data-aos="fade-up">
             <blockquote>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam, quos optio magnam aliquid est
+              <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, veniam, quos optio magnam aliquid est
                 sequi cupiditate tempore libero excepturi nam laudantium consequuntur quia iste dolor fugit quas?</p>
               <p><cite>&mdash; Carl Spencer</cite></p>
             </blockquote>
           </div>
-          <div class="slide">
+          <div class="slide" data-aos="fade-up">
             <blockquote>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veniam officiis placeat tempore,
+              <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veniam officiis placeat tempore,
                 voluptates quis, odit mollitia neque, quisquam sint temporibus in ullam delectus modi repudiandae
                 expedita! Cupiditate aspernatur illum adipisci recusandae beatae ea impedit.</p>
               <p><cite>&mdash; Ryan Peters</cite></p>
@@ -308,18 +308,18 @@
 
 
 
-    <section class="site-section bg-light" id="events-section">
-      <div class="container">
+    <section class="site-section bg-light" id="events-section" >
+      <div class="container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
         <div class="row">
 
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Upcoming Events</h2>
+            <h2 class="section-title text-center mb-5" >Upcoming Events</h2>
           </div>
         </div>
-        <div class="owl-carousel nonloop-block-13 position-relative">
+        <div class="owl-carousel nonloop-block-13 position-relative" >
            {% for event in events  %}
-          <div class=" mb-5 mb-lg-0 m-2  slide ">
-            <div class="event_entry">
+          <div class=" mb-5 mb-lg-0 m-2  slide " >
+            <div class="event_entry"  >
          
               <img src="{{event.image1}}" alt="Image" class="img-fluid">
               <div class="p-4 bg-white">
@@ -340,14 +340,14 @@
 
 
     <section class="site-section tst-con-bg" id="contact-section">
-      <div class="container " >
+      <div class="container " data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300" >
         <div class="row" >
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center text-white mb-5">Say Hello</h2>
+            <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">Say Hello</h2>
           </div>
         </div>
-        <form action="#" class="form gform"  method="POST"   action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVqRJtZBKHeLO879koAL_F8lWtGSfRXadHeCodmy8pArVyFw/formResponse">
-          <div class="row mb-4">
+        <form  class="form gform"  method="POST"   action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVqRJtZBKHeLO879koAL_F8lWtGSfRXadHeCodmy8pArVyFw/formResponse">
+          <div class="row mb-4" data-aos="fade-up">
             <div class="form-group col-6">
               <input type="text" name="entry.2005620554" class="form-control text-white txt-white" placeholder="Name">
             </div>
@@ -356,32 +356,31 @@
             </div>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-4" data-aos="fade-up">
             <div class="form-group col-12">
               <input type="email" name="entry.1045781291" class="form-control text-white txt-white" placeholder="Email address">
             </div>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-4" data-aos="fade-up">
             <div class="form-group col-12">
               <input type="text" name="entry.1065046570" class="form-control text-white txt-white"  placeholder="Subject of the message">
             </div>
           </div>
 
-          <div class="row mb-4" >
+          <div class="row mb-4" data-aos="fade-up" >
             <div class="form-group col-12">
               <textarea id="trigger-left" name="entry.839337160" id="" cols="30"  class="form-control text-white txt-white"
                 placeholder="Type your message here.."></textarea>
             </div>
           </div>
 
-          <div class="row ">
+          <div class="row " data-aos="fade-up">
             <div class="col-md-6" >
-              <input type="submit"  data-aos="fade-right"
-     data-aos-anchor="#trigger-left" data-aos-duration="2000" data-aos-delay="300" class="btn btn-color " value="Send Message">
+              <input type="submit"   class="btn btn-color " value="Send Message">
             </div>
           </div>
-            <div class="row text-center lg-col-4 mx-auto mt-5 ">
+            <div class="row text-center lg-col-4 mx-auto mt-5 " data-aos="fade-up">
             <p class="thankyou_message mx-auto text-center" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300"> Thanks for submitting the form</p>
             </div>
         </form>
@@ -389,23 +388,23 @@
     </section>
 
     <footer class="  footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-3">
+      <div class="container" >
+        <div class="row mb-5" >
+          <div class="col-md-3" data-aos="fade-up">
             <h3 class="footer-title" >GPK Studios</h3>
-            <a href="#"><p><span class="d-inline-block d-md-block">#31/7,Vasavi Complex,</span>Walaja Road,Sholinghur - 631102
+            <a href="#"><p ><span class="d-inline-block d-md-block">#31/7,Vasavi Complex,</span>Walaja Road,Sholinghur - 631102
             </p></a>
           </div>
-           <div class="col-md-5 mx-auto ">
-           <div class="row">
-              <div class="col-lg-6">
+          <div class="col-md-5 mx-auto ">
+            <div class="row" >
+              <div class="col-lg-6" data-aos="fade-up">
                 <h3 class="footer-title">Call Us</h3>
                 <ul class="list-unstyled">
                   <li><a href="tel:88386464210">+91 88386 464210</a></li>
                  <li><a href="tel:88386464210">+91 88386 464210</a></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" data-aos="fade-up">
                 <h3 class="footer-title">Email Us</h3>
                 <ul class="list-unstyled">
                   <li><a href="mailto:contact@gpkstudios.com">contact@gpkstudios.com</a></li>
@@ -413,25 +412,21 @@
                   
                 </ul>
               </div>
-          </div>
             </div>
+          </div>
 
-          <div class="col-md-3 ">
+          <div class="col-md-3 " data-aos="fade-up">
             <h3 class="footer-title">Follow Us</h3>
             <a href="#" class="social-circle p-2"><span class="icon-facebook"></span></a>
             <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 text-center ">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-             <p>Copyright &copy;  GPK Studios
-              <script>document.write(new Date().getFullYear());</script>
-             </p>
-             <p>Developed &#38; Maintained by <span> <a href="https://petigl.com"> Petigl</a> </span>
-              </p>
-             
+        <div class="row mb-3"  >
+          <div class="col-12 text-center " >
+             <p >Copyright &copy;  GPK Studios
+              <script>document.write(new Date().getFullYear());</script> </p>
+             <p >Developed &#38; Maintained by <span> <a href="https://petigl.com"> Petigl</a> </span></p>  
           </div>
         </div>
       </div>
