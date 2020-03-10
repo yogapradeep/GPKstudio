@@ -149,9 +149,11 @@ jQuery(document).ready(function ($) {
 				stagePadding: 0,
 				margin: 0,
 				autoplay: true,
-				nav: false,
-				navText: ['<span class="icon-arrow_back a_back position-absolute">', '<span class="icon-arrow_forward a_next position-absolute">'],
 
+				nav: false,
+				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward ">'],
+				dotsEach: true,
+				autoplaySpeed: 1000,
 
 				responsive: {
 					600: {
@@ -183,10 +185,12 @@ jQuery(document).ready(function ($) {
 			margin: 0,
 			smartSpeed: 1000,
 			autoplay: true,
-			pauseOnHover: false,
+
+
 			autoHeight: true,
 			nav: false,
-			navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+			navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">'],
+			autoplayTimeout: 7000,
 		});
 
 
@@ -266,5 +270,64 @@ jQuery(document).ready(function ($) {
 
 		return false;
 	});
+
+	/* stast counter
+	* ---------------------------------------------------- */
+	var clStatCount = function () {
+
+		var statSection = $(".event-count"),
+			stats = $(".number"),
+			statsw = $(".progress-bar");
+
+		statSection.waypoint({
+
+			handler: function (direction) {
+
+				if (direction === "down") {
+
+					stats.each(function () {
+						var $this = $(this);
+
+						$({
+							Counter: 0
+						}).animate({
+							Counter: $this.text()
+						}, {
+							duration: 2000,
+
+							step: function (curValue) {
+								$this.text(Math.ceil(curValue));
+							}
+						});
+					});
+
+					statsw.each(function () {
+						var $thisw = $(this);
+
+						$({
+							Counterw: 0
+						}).animate({
+							Counterw: $thisw.width()
+						}, {
+							duration: 2000,
+
+							step: function (curValuew) {
+								$thisw.width(Math.ceil(curValuew));
+							}
+						});
+					});
+
+				}
+
+				// trigger once only
+				this.destroy();
+
+			},
+
+			offset: "130%"
+
+		});
+	};
+	clStatCount();
 
 });
