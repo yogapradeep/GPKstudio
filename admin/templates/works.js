@@ -46,14 +46,25 @@ const works = createClass({
      
         ${entry.getIn(["data", "events"], []).map((evt, i) => html`
            <div class="col-md-6  col-lg-4 mb-4  " >
-            <div class="blog_entry">
-            <img src=${getAsset(evt.get("image1"))} alt="Image" style="${eimg}"  />
-              <div class="p-4 bg-white">
-                <h3 class="date">${evt.get("date")}</h3>
-               <h5> ${evt.get("location")}</h5>
-                <h5> ${evt.get("title")}</h5>
+      
+            <div class="event_entry"  >
+         
+              <div class="p-4 bg-white entry-cont d-flex flex-column justify-content-center ">
+                <div class="d-flex align-items-center entrytext-cont">
+                  <p class="icon-calendar event-icon"></p>
+                  <h3 class="date"> ${evt.get("date")}</h3>
+                </div>
+                <div class="d-flex align-items-center entrytext-cont">
+                  <p class="icon-location2 event-icon"></p>
+                  <h5> ${evt.get("location")}</h5>
+                </div>
+                <div class="d-flex align-items-center entrytext-cont">
+                  <p class="icon-event_note event-icon"></p>
+                  <h5> ${evt.get("title")}</h5>
+                </div>
               </div>
-              </div>
+              
+            </div>
           </div>
         `)} 
         </div>

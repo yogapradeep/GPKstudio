@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("scss");
     eleventyConfig.addPassthroughCopy("static");
+    eleventyConfig.addPassthroughCopy("form");
 
     return {
         passthroughFileCopy: true,
