@@ -283,7 +283,7 @@ textarea.input100 {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   padding-top: 20px;
   width: 100%;
 }
@@ -297,9 +297,9 @@ textarea.input100 {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  width: 100%;
+  width: 20%;
   height: 50px;
-  background-color: #333333;
+  background-color:  #e8590c;
   border-radius: 25px;
 
   font-family: Montserrat-Medium;
@@ -321,7 +321,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #00ad5f;
+  background-color: #333333;
 }
 
 .contact100-form-btn:hover i {
