@@ -124,7 +124,7 @@ jQuery(document).ready(function ($) {
 				autoplay: true,
 
 				nav: false,
-				navText: ['<span class="icon-arrow-left2">', '<span class="icon-arrow-right2 ">'],
+				navText: ['<span class="icon-arrow-left2">', '<span class="icon-arrow-right2">'],
 				dotsEach: true,
 				autoplaySpeed: 1000,
 
