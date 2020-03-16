@@ -1016,6 +1016,10 @@ figure figcaption {
 
 
 @media (min-width:320px) and (max-width: 640px) {
+  .footer .footer-title {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  color: white; }
   .grid-sizer,
   .grid-item {
     width: 49%;
@@ -1249,4 +1253,7 @@ position: relative;
 }
 .entry-cont{
   height:250px;
+}
+.footer-button.active{
+  background-color:#e8590c ;
 }

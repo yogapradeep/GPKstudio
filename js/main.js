@@ -22,16 +22,30 @@ var msnry = new Masonry(grid, {
 
 });
 
-imagesLoaded(grid).on('load', function () {
+imagesLoaded(grid).on('progress', function () {
 	// layout Masonry after each image loads
 	msnry.layout();
 });
+
+var grid = document.querySelector('.grid');
+var msnry;
+
+imagesLoaded(grid, function () {
+	// init Isotope after all images have loaded
+	msnry = new Masonry(grid, {
+		itemSelector: '.grid-item',
+		columnWidth: '.grid-sizer',
+		percentPosition: true
+	});
+});
+
 
 
 
 jQuery(document).ready(function ($) {
 
 	"use strict";
+
 
 
 
