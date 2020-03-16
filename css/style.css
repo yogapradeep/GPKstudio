@@ -1208,19 +1208,21 @@ position: relative;
   background-position: center center;
   background-size: cover;
 }
+
 .s-bg-1{
   background-image: url(/images/s1.jpg);
 }
 .s-bg-2{
   background-image: url(/images/s2.jpg);
 }
-.s-bg-3{
+/* .s-bg-3{
   background-image: url(/images/s3.jpg);
 }
 
 .s-bg-4{
   background-image: url(/images/s4.jpg);
-}
+} */
+/* 
 .s-bg-5{
   background-image: url(/images/s5.jpg);
 }
@@ -1235,7 +1237,7 @@ position: relative;
 }
 .s-bg-9{
   background-image: url(/images/s9.jpg);
-}
+} */
 .event-icon{
   color: #666666; 
   padding-right: 1rem;

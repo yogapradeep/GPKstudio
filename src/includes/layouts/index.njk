@@ -120,7 +120,7 @@
 
           <div class="col-md-6 mb-4   " data-aos="fade-down-right" data-aos-duration="1300" data-aos-delay="300">
            
-              <div class="service-cont  s-bg-1">
+              <div class="service-cont  s-bg-1 lazy">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-57.5px;margin-top:-16.5px">Wedding</h3>
               
@@ -129,21 +129,21 @@
          
 
           <div class="col-md-6 mb-4" data-aos="fade-down-left" data-aos-duration="1300" data-aos-delay="300">
-             <div class="service-cont s-bg-2">
+             <div class="service-cont s-bg-2 lazy">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-123.5px;margin-top:-16.5px">Cinematic Wedding</h3>
              </div>
           </div>
 
           <div class="col-md-6 mb-4" data-aos="fade-up-right" data-aos-duration="1300" data-aos-delay="300">
-           <div class="service-cont s-bg-3">
+           <div class="service-cont s-bg-3 lazy" data-bg="url(/images/s3.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-95.5px;margin-top:-16.5px">Montage Video </h3>
              </div>
           </div>
 
           <div class="col-md-6 mb-4" data-aos="fade-up-left" data-aos-duration="1300" data-aos-delay="300">
-             <div class="service-cont s-bg-4">
+             <div class="service-cont s-bg-4 lazy" data-bg="url(/images/s4.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-138.5px;margin-top:-16.5px">Candid Photo & Video</h3>
               
@@ -153,7 +153,7 @@
 
           <div class="col-md-6 mb-4 " data-aos="fade-up-right" data-aos-duration="1300" data-aos-delay="300">
         
-              <div class="service-cont s-bg-5">
+              <div class="service-cont s-bg-5 lazy" data-bg="url(/images/s5.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-72.5px;margin-top:-16.5px">Baby Shoot</h3>
               
@@ -163,14 +163,14 @@
           </div>
 
           <div class="col-md-6 mb-4" data-aos="fade-up-left" data-aos-duration="1300" data-aos-delay="300">
-             <div class="service-cont s-bg-6">
+             <div class="service-cont s-bg-6 lazy"  data-bg="url(/images/s6.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-89.5px;margin-top:-16.5px">Product Shoot</h3>
               
              </div>
           </div>
            <div class="col-md-6 mb-4" data-aos="fade-up-right" data-aos-duration="1300" data-aos-delay="300">
-            <div class="service-cont s-bg-7">
+            <div class="service-cont s-bg-7 lazy" data-bg="url(/images/s7.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-136.5px;margin-top:-16.5px"> Corporate & Modeling </h3>
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-42px; margin-top:10px">Events</h3>
@@ -178,7 +178,7 @@
           </div>
 
           <div class="col-md-6 mb-4" data-aos="fade-up-left" data-aos-duration="1300" data-aos-delay="300">
-            <div class="service-cont s-bg-8">
+            <div class="service-cont s-bg-8 lazy" data-bg="url(/images/s8.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-89.5px;margin-top:-16.5px">Season Shoot</h3>
               
@@ -186,7 +186,7 @@
           </div>
           <div class="col-md-6 mx-auto mb-4" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
            
-              <div class="service-cont s-bg-9">
+              <div class="service-cont s-bg-9 lazy" data-bg="url(/images/s9.jpg)">
               
                 <h3 class="position-absolute text-white service-title" style=" margin-left:-14.5px;margin-top:-16.5px">DJ</h3>
              
@@ -275,9 +275,9 @@
         <div class="grid-sizer "></div>
         <div class="gutter-sizer "></div>
         {% for img in images %}
-        <a href="{{img.image}}" class="item-wrap fancybox  grid-item" data-aos="fade-up">
+        <a href="{{img.image}}" class="item-wrap fancybox  grid-item" data-aos="fade-up" >
           <span class="icon-search"></span>
-          <img class="img-fluid" src="{{img.image}}" loading="lazy">
+          <img class="img-fluid " src="{{img.image}}"  >
         </a>
          {% endfor %} 
        
@@ -477,10 +477,11 @@
   <script src="./js/imagesloaded.pkgd.js"></script>
   <script src="./js/jquery.waypoints.min.js"></script>
   <script src="js/form-submission-handler.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/jquery.lazyload.min.js"></script>
 
   <script src="js/main.js"></script>
-
-
+ 
 </body>
 
 </html>

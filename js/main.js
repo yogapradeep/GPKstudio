@@ -3,6 +3,11 @@ AOS.init({
 	easing: 'slide',
 	once: true,
 });
+var lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy",
+
+	// ... more custom settings?
+});
 // Masonry
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
@@ -17,13 +22,17 @@ var msnry = new Masonry(grid, {
 
 });
 
-imagesLoaded(grid).on('progress', function () {
+imagesLoaded(grid).on('load', function () {
 	// layout Masonry after each image loads
 	msnry.layout();
 });
+
+
+
 jQuery(document).ready(function ($) {
 
 	"use strict";
+
 
 
 	var siteMenuClone = function () {
@@ -292,5 +301,6 @@ jQuery(document).ready(function ($) {
 		});
 	};
 	clStatCount();
+
 
 });
