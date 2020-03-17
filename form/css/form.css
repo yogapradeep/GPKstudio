@@ -185,7 +185,7 @@ iframe {
   display: block;
   width: 100%;
   font-family: Montserrat-Black;
-  font-size: 39px;
+  font-size: 30px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
@@ -712,9 +712,13 @@ textarea.input100 {
 }
 .cont{
   margin-top: 3rem;
-  height: 10vh;
+  height: 11vh;
   margin-bottom: 3rem;;
   text-align: center;
+}
+.cont h2{
+  margin-bottom: 1rem;
+
 }
 .title{
   

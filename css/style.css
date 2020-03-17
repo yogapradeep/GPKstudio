@@ -458,3 +458,7 @@ position: relative;
 .entry-cont{
   height:250px;
 }
+.footer-title a{
+  padding-left: .3rem;
+  color: #e8590c;
+}

@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
         ],
 
         dir: {
-            input: "src",
+            input: "src/gpkstudio",
             includes: "includes",
             output: "site"
         }
