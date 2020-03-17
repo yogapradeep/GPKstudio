@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>Contact V5</title>
+	<title>Registration Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
 	<!--===============================================================================================-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/form/css/form.css">
 	<!--===============================================================================================-->
@@ -15,50 +14,64 @@
 
 <body>
 
+	<div class="cont">
+		<h2><a href="/index.html" class="title">
+
+				GPK Studio </a> </h2>
+
+	</div>
 
 	<div class="container-contact100">
+
+
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form gform" method="POST" action="">
+			<form class="contact100-form validate-form gform" method="POST"
+				action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScQxgHvBqTxG_dTP6daO3yGS8hwFwjlTzoox-MC-KDztgzwpQ/formResponse">
 				<span class="contact100-form-title">
 					Contact Us
 				</span>
 
 				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
-					<span class="label-input100">FULL NAME *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+					<span class="label-input100">FULL Name *</span>
+					<input class="input100" type="text" name="entry.2005620554" placeholder="Enter Your Name" required>
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Phone *</span>
+					<input class="input100" type="tel" name="entry.1166974658" placeholder="Enter Phone Number"
+						required>
 				</div>
 
 				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100"
 					data-validate="Enter Your Email (e@a.x)">
-					<span class="label-input100">Email *</span>
-					<input class="input100" type="text" name="email" placeholder="Enter Your Email ">
+					<span class="label-input100">Email </span>
+					<input class="input100" type="text" name="entry.1045781291" placeholder="Enter Your Email ">
 				</div>
 
-				<div class="wrap-input100 bg1 rs1-wrap-input100">
-					<span class="label-input100">Phone</span>
-					<input class="input100" type="tel" name="phone" placeholder="Enter Number Phone">
-				</div>
 
 				<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">Professsion *</span>
-					<input class="input100" type="text" name="text"
-						placeholder="Enter Your Profession, eg.Photographer,Videographer, DJ">
+					<input class="input100" type="text" name="entry.1065046570"
+						placeholder="eg.Photographer,Videographer, DJ" required>
 				</div>
 
 
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate"
 					data-validate="Please Type Your Message">
 					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" name="entry.839337160" placeholder="Your message here..."></textarea>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button class="contact100-form-btn" type="submit">
 
 						Submit
 
 					</button>
 				</div>
+				<p class="thankyou_message">
+					Thanks For submission, We will Conatact You Soon.
+				</p>
 			</form>
 		</div>
 	</div>
@@ -66,15 +79,14 @@
 
 
 	<!--===============================================================================================-->
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 	<!--===============================================================================================-->
 	<!--===============================================================================================-->
-	<script src="js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
-
-	</script>
-	<script src="/form/js/main.js"></script>
 	<script src="js/form-submission-handler.js"></script>
+
+	<!-- <script src="/form/js/main.js"></script> -->
+
 
 
 

@@ -5,31 +5,6 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Black;
-  src: url('../fonts/montserrat/Montserrat-Black.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
-}
-
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -57,6 +32,7 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  text-decoration: none;
 }
 
 a:focus {
@@ -176,6 +152,8 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;;
   background: #e6e6e6;
   
 }
@@ -234,7 +212,7 @@ iframe {
 
 .label-input100 {
   font-family: Montserrat-SemiBold;
-  font-size: 10px;
+  font-size: 14px;
   color: #393939;
   line-height: 1.5;
   text-transform: uppercase;
@@ -286,6 +264,7 @@ textarea.input100 {
   justify-content: start;
   padding-top: 20px;
   width: 100%;
+
 }
 
 .contact100-form-btn {
@@ -297,11 +276,11 @@ textarea.input100 {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  width: 20%;
+  width: 50%;
   height: 50px;
   background-color:  #e8590c;
   border-radius: 25px;
-
+  
   font-family: Montserrat-Medium;
   font-size: 16px;
   color: #fff;
@@ -312,7 +291,11 @@ textarea.input100 {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
+@media (min-width:640px) {
+  .contact100-form-btn{
+    width:25%;
+  }
+}
 .contact100-form-btn i {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -726,4 +709,24 @@ textarea.input100 {
   .wrap-contact100-form-radio {
     padding: 15px 0px 0 0px;
   }
+}
+.cont{
+  margin-top: 3rem;
+  height: 10vh;
+  margin-bottom: 3rem;;
+  text-align: center;
+}
+.title{
+  
+  color: #e8590c;
+  font-size: 2rem;
+  font-weight: 900;
+  
+}
+.thankyou_message{
+  display: none;
+  margin: auto;
+  margin-top: 2rem;;
+  font-size: 1.3rem;;
+  text-align: center;
 }
