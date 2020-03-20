@@ -231,7 +231,9 @@ font-weight: 700;}
     border-color: #000; }
 
 .footer {
-  font-size: .9rem; }
+  font-size: .9rem;
+   
+}
   .footer .footer-title {
     font-size: 1.1rem;
     margin-bottom: 30px;
@@ -294,10 +296,15 @@ background-color: rgb(212, 196, 196) }
 }
 
 
-
+.footer_cont{
+  margin: 0 3rem;
+}
 
 
 @media (min-width:320px) and (max-width: 640px) {
+  .footer_cont{
+    margin: 0 1rem;
+  }
   .footer .footer-title {
     font-size: 1.1rem;
     margin-bottom: 16px;
@@ -457,4 +464,19 @@ position: relative;
 }
 .entry-cont{
   height:250px;
+}
+.footer-btn{
+  padding-left: .3rem;
+  color: #e8590c !important;
+}
+.upi-id{
+  color: #666666;
+}
+.copyright{
+ color:  #666666;
+ font-size: 1rem;;
+}
+
+.footer-text{
+  font-size: 1.1rem;;
 }

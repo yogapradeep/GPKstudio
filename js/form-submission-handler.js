@@ -1,31 +1,31 @@
-(function () {
-
+(function() {
+  
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
     var honeypot;
 
-    var fields = Object.keys(elements).filter(function (k) {
+    var fields = Object.keys(elements).filter(function(k) {
       if (elements[k].name === "honeypot") {
         honeypot = elements[k].value;
         return false;
       }
       return true;
-    }).map(function (k) {
-      if (elements[k].name !== undefined) {
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
         return elements[k].name;
-        // special case for Edge's html collection
-      } else if (elements[k].length > 0) {
+      // special case for Edge's html collection
+      }else if(elements[k].length > 0){
         return elements[k].item(0).name;
       }
-    }).filter(function (item, pos, self) {
+    }).filter(function(item, pos, self) {
       return self.indexOf(item) == pos && item;
     });
 
     var formData = {};
-    fields.forEach(function (name) {
+    fields.forEach(function(name){
       var element = elements[name];
-
+      
       // singular form elements just have one value
       formData[name] = element.value;
 
@@ -49,7 +49,7 @@
       = form.dataset.email || ""; // no email by default
 
     console.log(formData);
-    return { data: formData, honeypot: honeypot };
+    return {data: formData, honeypot: honeypot};
   }
 
   function handleFormSubmit(event) {  // handles form submit without any jquery
@@ -69,31 +69,31 @@
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function () {
-      console.log(xhr.status, xhr.statusText);
-      console.log(xhr.responseText);
-      form.reset();
-      var formElements = form.querySelector(".form-elements")
-      if (formElements) {
-        formElements.style.display = "none"; // hide form
-      }
-      var thankYouMessage = form.querySelector(".thankyou_message");
-      if (thankYouMessage) {
-        thankYouMessage.style.display = "block";
-      }
-      return;
+    xhr.onreadystatechange = function() {
+        console.log(xhr.status, xhr.statusText);
+        console.log(xhr.responseText);
+        form.reset();
+        var formElements = form.querySelector(".form-elements")
+        if (formElements) {
+          formElements.style.display = "none"; // hide form
+        }
+        var thankYouMessage = form.querySelector(".thankyou_message");
+        if (thankYouMessage) {
+          thankYouMessage.style.display = "block";
+        }
+        return;
     };
     // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function (k) {
-      return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
   }
-
+  
   function loaded() {
     console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
-    var forms = document.querySelectorAll("form.rform");
+    var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener("submit", handleFormSubmit, false);
     }
