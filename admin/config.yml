@@ -15,7 +15,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-       - file: "src/index.html"
+       - file: "src/gpkstudio/index.html"
          label: "works"
          name: "works"
          fields:
