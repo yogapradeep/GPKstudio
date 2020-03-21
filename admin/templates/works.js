@@ -24,7 +24,7 @@ const works = createClass({
             <h2 class="section-title text-center mb-5">Our Photography</h2>
           </div>   
       ${entry.getIn(["data", "images"], []).map((img, i) => html`
-          <div class="col-6 col-lg-4 item mb-4">  
+          <div class="col-6 col-md-4 item mb-4">  
             <span class="icon-search2"></span>
               <img class="img-fluid" src="${getAsset(img.get("image"))}"  />
          </div>
