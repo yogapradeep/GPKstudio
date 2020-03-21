@@ -15,7 +15,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-       - file: "src/index.html"
+       - file: "src/gpkstudio/index.html"
          label: "works"
          name: "works"
          fields:
@@ -24,8 +24,9 @@ collections:
             {label: "Image", name: "image", widget: image},]}
           - {label: "events", name: events, widget: "list", fields: [
             {label: "date", name: "date", widget: text},
+             {label: Title, name: title, widget: string},
              {label: Location, name: location, widget: string},
-            {label: Title, name: title, widget: string},]}
+           ]}
           
 
 

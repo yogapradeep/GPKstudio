@@ -6,10 +6,7 @@ const html = htm.bind(h);
 const works = createClass({
 
   render() {
-    const eimg = {
-      width: 300,
-      height: 250,
-    };
+
     const pimg = {
 
       height: 350,
@@ -21,15 +18,15 @@ const works = createClass({
 
     return html`
     <section class="site-section block__62272" id="portfolio-section">
-      <div class="container">
+      <div class="mx-2">
         <div class="row mb-5">
           <div class="col-12 position-relative">
             <h2 class="section-title text-center mb-5">Our Photography</h2>
           </div>   
       ${entry.getIn(["data", "images"], []).map((img, i) => html`
-          <div class="col-md-6 col-lg-4 item mb-4">  
+          <div class="col-6 col-md-4 item mb-4">  
             <span class="icon-search2"></span>
-              <img class="img-fluid" src="${getAsset(img.get("image"))}" style="${pimg}"  />
+              <img class="img-fluid" src="${getAsset(img.get("image"))}"  />
          </div>
          `)}
         </div>
