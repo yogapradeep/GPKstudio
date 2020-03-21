@@ -18,13 +18,13 @@ const works = createClass({
 
     return html`
     <section class="site-section block__62272" id="portfolio-section">
-      <div class="mx-5">
+      <div class="mx-2">
         <div class="row mb-5">
           <div class="col-12 position-relative">
             <h2 class="section-title text-center mb-5">Our Photography</h2>
           </div>   
       ${entry.getIn(["data", "images"], []).map((img, i) => html`
-          <div class="col-md-6 col-lg-4 item mb-4">  
+          <div class="col-md-4 col-lg-4 item mb-4">  
             <span class="icon-search2"></span>
               <img class="img-fluid" src="${getAsset(img.get("image"))}"  />
          </div>
