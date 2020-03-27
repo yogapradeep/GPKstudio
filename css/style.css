@@ -392,9 +392,7 @@ footer{
   background-color:#ff922b ;
 }
 
-.text-intro h1{
-  font-size: 2rem;
-}
+
 .thankyou_message{
   display: none;
   color: white;
@@ -479,4 +477,29 @@ position: relative;
 
 .footer-text{
   font-size: 1.1rem;;
+}
+@media (min-width: 768px) {
+.pg-text{
+  font-size: 1.5rem;
+  
+}
+.ab-text{
+  font-size: 1.4rem;
+}
+.slide-one-item .slide blockquote {
+  font-size: 1.4rem;
+}
+.slide-one-item .slide blockquote h6 {
+  font-size: 1.2rem;
+}
+.event_entry h3 {
+  font-size: 1.5rem; }
+
+.event_entry h5 {
+  font-size: 1.3rem; 
+}
+ .form-control{
+   font-size: 1.4rem;
+ }
+  
 }
